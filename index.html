@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Corinthians Engineers</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+
+    <main class="hide">
+        <nav>
+            <div id="hamburguer">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Apresentação
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-soccer-ball"></i>
+                        Temporada
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Orçamento
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Hard Corinthians Engineers</h1>
+            <span>Filipe Giovannetti & Paris Salazar</span>
+            <a href="#" class="button">sobre nós</a>
+        </header>
+
+        <section class="section-presentation">
+            <img class="avatar large-only" src="https://github.com/FilipeGiovannetti.png" alt="avatar do Filipe">
+            <img class="avatar large-only" src="https://github.com/ParisPS.png" alt="avatar do Paris">
+            <div>
+                <h2>Sofrendo pelo Corinthians desde 2003</h2>
+                <p> Filipe: Tenho 19 anos, moro na Vila Formosa. Comecei um curso
+                    de JavaScrip recentemente, não tenho muita experiencia no assunto mas gosto muito de
+                    programação/software, sou bem iniciante ainda. Tenho um inglês bem básico. Gosto de joga um
+                    CS, Valorant</p>
+                <p>Paris: Tenho 19 anos, tenho uma paixão enorme pelo Corinthians, desde pequeno quando
+                    ia pros jogos com meu avô e meu pai. Eu sou corinthians até o meu último dia, nas vitorias e
+                    principalmente nas derrotas.</p>
+                <a href="#" class="button">home</a>
+            </div>
+        </section>
+
+        <section id="section-projects">
+            <h2>Temporada</h2>
+            <ul>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/brasileirao.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Brasileirão</h3>
+                        <h4>Todas as rodadas</h4>
+                        <p>Acompanhe o timão na conquista do Octa!</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/copa.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Copa do Brasil</h3>
+                        <h4>Todos os jogos aqui!</h4>
+                        <p>Acompanhe o timão na conquista do Tetra!</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/libertadores.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Libertadores</h3>
+                        <h4>Todas as estatísticas aqui!</h4>
+                        <p>Acompanhe o timão na conquista do Bi!</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="section-budged">
+            <form action="#">
+                <h4>Orçamento do ano</h4>
+                <label for="qtde">Número de jogadores</label>
+                <input type="number" id="qtde" min="1" value="1">
+                <label for="js">Tivemos reforços?</label>
+                <input type="checkbox" id="js">
+                <label for="layout">Tivemos aumento de salário</label>
+                <div>
+                    <input type="radio" id="layout-sim" name="layout">
+                    <label for="layout-sim">sim, tivemos</label>
+                    <input type="radio" id="layout-nao" name="layout">
+                    <label for="layout-nao">não tivemos</label>
+                </div>
+                <label for="prazo">Prazo</label>
+                <input type="range" id="prazo" min="1" max="10">
+                <output id="preco">R$ 1000,00</output>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>
