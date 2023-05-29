@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStorm sprint02</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hide">
+        <nav>
+            <div id="hamburguer">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+
+            <ul id="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Projeto
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-soccer-ball"></i>
+                        Integrantes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Orçamento
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>TechStorm - Sanofi</h1>
+            <span></span>
+            <a href="#" class="button">sobre o projeto</a>
+        </header>
+
+        <section class="section-presentation">
+            <div>
+                <h2>Projeto</h2>
+                <p> Uma solução para automatizar o processo de prestação de contas de despesas seria desenvolver um
+                    aplicativo móvel que permita aos usuários tirar uma foto do recibo ou fatura e enviá-la para um
+                    servidor em nuvem. Esse servidor usaria a tecnologia de IoT (Internet das Coisas) e visão
+                    computacional para interpretar as informações presentes no recibo, classificando automaticamente o
+                    tipo de despesa. conforme as regras de negócio e requisitos funcionais.
+                    Além disso, o sistema usaria informações do Cartão Concur para relacionar a despesa com um gasto
+                    existente, se houver, e vinculá-la à conta correta. Se a despesa não estiver no Cartão Concur, o
+                    sistema a classificará como uma despesa a ser reembolsada ao funcionário.</p>
+                    <a href="#" class="button">home</a>
+            </div>
+        </section>
+
+        <section id="section-projects">
+            <h2>Integrantes:</h2>
+            <ul>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Filipe.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Filipe Giovannetti</h3>
+                        <h4>RM86925</h4>
+                        <p>A parte organizacional e lida diretamente com a empresa Sanofi. Também cuida da gestão do
+                            projeto.</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Paris.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Paris Salazar</h3>
+                        <h4>RM86698</h4>
+                        <p>Encarregado na realização do site; também defini os componentes a ser utilizado no circuito.
+                        </p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Pedro.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Pedro Hernandes</h3>
+                        <h4>RM88154</h4>
+                        <p>Tem como principal função escolher as ferramentas e recursos; e também a parte de Redes do
+                            projeto.</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/images/Rodrigues.jpeg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Vinicius Rodrigues</h3>
+                        <h4>RM8919</h4>
+                        <p>Cuida da parte da gestão do projeto, como definir as regras de negócio, requisitos funcionais
+                            e não funcionais; e também da IA.</p>
+                        <a href="" class="button">saiba mais</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="section-budged">
+            <form action="#">
+                <h4>Orçamento do projeto</h4>
+                <label for="qtde">Softwares/componentes a ser utilizados</label>
+                <input type="number" id="qtde" min="1" value="1">
+                <label for="js">Tivemos imprevistos?</label>
+                <input type="checkbox" id="js">
+                <label for="layout">Tivemos que reiniciar alguma parte do projeto?</label>
+                <div>
+                    <input type="radio" id="layout-sim" name="layout">
+                    <label for="layout-sim">sim, tivemos</label>
+                    <input type="radio" id="layout-nao" name="layout">
+                    <label for="layout-nao">não tivemos</label>
+                </div>
+                <label for="prazo">Prazo do projeto</label>
+                <input type="range" id="prazo" min="1" max="10">
+                <output id="preco">R$ 1000,00</output>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>s
